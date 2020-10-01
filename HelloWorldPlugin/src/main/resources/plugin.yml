@@ -5,3 +5,6 @@ version: ${project.version}
 description: Practice plugin using Gradle and PaperAPI
 api-version: 1.16
 author: Zinadine Muñoz
+
+commands:
+  hello:

@@ -1,6 +1,7 @@
 package me.zizoumunoz.helloworldplugin;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import me.zizoumunoz.helloworldplugin.commands.TestCommand;
 
 public class HelloWorldPlugin extends JavaPlugin {
 
@@ -10,7 +11,7 @@ public class HelloWorldPlugin extends JavaPlugin {
 		 * "the only ways the player can interact with your plug-in is
 		 * through commands and events."
 		 */
-
+		getCommand("hello").setExecutor(new TestCommand());
 	}
 
 }
