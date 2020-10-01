@@ -12,7 +12,8 @@ public class TestCommand implements CommandExecutor {
 
 		if (sender instanceof Player) {
 			Player player = (Player) sender;
-			
+			player.damage(20);
+			player.chat("Hello World!");
 		} else {
 			sender.sendMessage("Only players!!!!111!!");
 		}
