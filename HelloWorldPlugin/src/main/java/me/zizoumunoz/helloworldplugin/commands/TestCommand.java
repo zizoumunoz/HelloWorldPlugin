@@ -19,10 +19,10 @@ public class TestCommand implements TabExecutor {
 		if (sender instanceof Player) {
 			Player player = (Player) sender;
 			player.damage(20);
-			player.sendMessage("Hello World! 1");
-			player.chat("F xd");
+			player.sendMessage("Hello World!");
+			player.chat("I just died.");
 		} else {
-			sender.sendMessage("Only players!!!!111!!");
+			sender.sendMessage("You must be online to use this command.");
 		}
 
 		return false;
@@ -39,6 +39,11 @@ public class TestCommand implements TabExecutor {
 				}
 			}
 		}
+
+//		 To do more than one argument, do an else if statement
+//		 for each number of arguments. Alternatively, use a
+//		 switch statement.
+
 		return autoTabList;
 	}
 
