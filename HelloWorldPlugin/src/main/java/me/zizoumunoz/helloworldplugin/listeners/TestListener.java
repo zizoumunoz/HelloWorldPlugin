@@ -8,7 +8,7 @@ public class TestListener implements Listener {
 
 	@EventHandler
 	public void onFillBucket(PlayerBucketFillEvent fillBucket) {
-		fillBucket.getPlayer().setExp(1000000);
+		fillBucket.getPlayer().setExp(1);
 	}
 
 }
