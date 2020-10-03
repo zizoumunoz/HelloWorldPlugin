@@ -9,12 +9,17 @@ public class HelloWorldPlugin extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		/*
-		 * "the only ways the player can interact with your plug-in is
-		 * through commands and events."
+		 * "the only ways the player can interact with your plug-in is through commands
+		 * and events."
 		 */
+
+		saveDefaultConfig();
+
 		getCommand("hello").setExecutor(new TestCommand());
 		getServer().getPluginManager().registerEvents(new TestListener(), this);
 		new TestListener();
+
+		getConfig().getBoolean("test-config");
 	}
 
 }
